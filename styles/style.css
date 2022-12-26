@@ -1,0 +1,38 @@
+root {
+    --main-color: rgb(70, 177, 222);
+    --extra-bgd-color: #a1c7d4;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1190px;
+    padding: 0 5px;
+}
+.to-uppercase {
+    text-transform: uppercase;
+}
+.main-color {
+    color: var(--main-color);
+    color: aqua;
+}
+.d-flex {
+    display: flex;
+}
+.font-bolder {
+    font-weight: bolder;
+}
+
+/* ---- header styles ---- */
+
+.logo-wrap {
+    gap: 7px;
+    height: 91px;
+}
+.big-logo-text {
+    font-size: 26px;
+}
+.small-logo-text {
+    font-size: 16px;
+}
