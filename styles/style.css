@@ -1,21 +1,82 @@
-root {
+:root {
     --main-color: rgb(70, 177, 222);
-    --extra-bgd-color: #a1c7d4;
+    --extra-color: #a1c7d4;
+    --main-text-color: #1b1d1f;
+}
+@font-face {
+    font-family: "Roboto";
+    font-display: swap;
+    src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+        url("../fonts/Roboto-Regular.woff") format("woff"),
+        url("../fonts/Roboto-Regular.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto";
+    font-display: swap;
+    src: url("../fonts/Roboto-Medium.woff2") format("woff2"),
+        url("../fonts/Roboto-Medium.woff") format("woff"),
+        url("../fonts/Roboto-Medium.ttf") format("ttf");
+    font-weight: medium;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto";
+    font-display: swap;
+    src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
+        url("../fonts/Roboto-Bold.woff") format("woff"),
+        url("../fonts/Roboto-Bold.ttf") format("ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Sofia Sans";
+    font-display: swap;
+    src: url("../fonts/SofiaSans-Regular.woff2") format("woff2"),
+        url("../fonts/SofiaSans-Regular.woff") format("woff"),
+        url("../fonts/SofiaSans-Regular.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    font-display: swap;
+    src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+        url("../fonts/Montserrat-Regular.woff") format("woff"),
+        url("../fonts/Montserrat-Regular.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    font-display: swap;
+    src: url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+        url("../fonts/Montserrat-Bold.woff2") format("woff"),
+        url("../fonts/Montserrat-Bold.ttf") format("ttf");
+    font-weight: bold;
+    font-style: normal;
 }
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", "Sofia Sans", "Montserrat", sans-serif;
+    font-weight: normal;
+    color: var(--main-text-color);
 }
 .container {
     width: 1190px;
     padding: 0 5px;
+    margin: 0 auto;
 }
 .to-uppercase {
     text-transform: uppercase;
 }
 .main-color {
     color: var(--main-color);
-    color: aqua;
 }
 .d-flex {
     display: flex;
@@ -26,13 +87,51 @@ root {
 
 /* ---- header styles ---- */
 
+.wrapper-header {
+    justify-content: space-between;
+}
+.wrapper-nav,
+.navigation {
+    gap: 90px;
+}
 .logo-wrap {
     gap: 7px;
     height: 91px;
+    font-family: "Sofia Sans";
+    font-size: 38px;
+}
+.logo {
+    height: 81px;
 }
 .big-logo-text {
-    font-size: 26px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .small-logo-text {
-    font-size: 16px;
+    font-size: 26px;
+}
+.navigation {
+    padding-top: 16px;
+}
+.nav-list {
+    padding-top: 2px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 350px;
+    list-style: none;
+}
+.phone a + a {
+    text-decoration: none;
+    color: var(--main-text-color);
+    padding-top: 2px;
+}
+.lang-choice {
+    padding-top: 18px;
+}
+.lang-choice span {
+    padding: 0 5px;
+}
+.choice-btn {
+    background: none;
+    border: unset;
+    font-size: 20px;
 }
