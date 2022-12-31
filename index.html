@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./styles/style.css" />
+        <link rel="stylesheet" href="./styles/media.css" />
         <link
             rel="shortcut icon"
             href="./images/logo-tooth.svg"
@@ -12,16 +13,16 @@
         <title>Dr. Nikola Tesla Dantist</title>
     </head>
     <body>
-        <header>
+        <header class="header">
             <div class="container d-flex wrapper-header">
                 <div class="wrapper-nav d-flex">
-                    <div class="main-color d-flex logo-wrap">
+                    <div class="logo-wrap main-color d-flex">
                         <img
                             src="./images/blue-tooth.png"
                             alt="logo tooth"
-                            class="main-color logo" />
-                        <p class="main-color">
-                            <span class="to-uppercase main-color big-logo-text"
+                            class="logo" />
+                        <p>
+                            <span class="to-uppercase big-logo-text"
                                 >dr.nikola tesla</span
                             ><br /><span class="small-logo-text">dantist</span>
                         </p>
@@ -29,30 +30,314 @@
                     <div class="navigation d-flex">
                         <nav>
                             <ul class="nav-list d-flex">
-                                <li>Main</li>
-                                <li>Services</li>
-                                <li>Contacts</li>
+                                <li>
+                                    <a class="nav-link" href="#main">Main</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#services"
+                                        >Services</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#">Contacts</a>
+                                </li>
                             </ul>
                         </nav>
-                        <div class="phone d-flex">
+                        <div class="nav-phone-link d-flex">
                             <a href="tel:+380999999999"
                                 ><img
                                     src="./images/phone-in-talk-icon.png"
                                     alt="phone icon" /></a
-                            ><a href="tel:+380999999999">+38 (099) 999-99-99</a>
+                            ><a
+                                class="nav-link phone-link"
+                                href="tel:+380999999999"
+                                >+38 (099) 999-99-99</a
+                            >
                         </div>
                     </div>
                 </div>
                 <div class="lang-choice">
                     <button class="to-uppercase choice-btn">ua</button
                     ><span>|</span>
-                    <button class="font-bolder to-uppercase choice-btn">
+                    <button class="active-btn to-uppercase choice-btn">
                         en
                     </button>
                 </div>
             </div>
         </header>
-        <main><div class="container"></div></main>
-        <footer><div class="container"></div></footer>
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <h1 class="hero-title">
+                        professional<br />and painless<br />
+                        <span class="main-color">dental treatment</span>
+                    </h1>
+                    <p class="hero-text" id="main">
+                        I will conduct a complete diagnosis of the oral cavity
+                        and build an individual treatment plan. Call and get a
+                        completely free consultation
+                    </p>
+                    <div class="hero-btn-wrapper d-flex">
+                        <a class="hero-btn" href="tel:+380999999999">Call</a>
+                        <a class="hero-btn" href="#services">Services</a>
+                    </div>
+                    <div class="hero-cards d-flex">
+                        <div class="hero-cards-item d-flex">
+                            <div>15</div>
+                            <div>
+                                years providing services for dental treatment
+                                for adults and children
+                            </div>
+                        </div>
+                        <div class="hero-cards-item d-flex">
+                            <div>90%</div>
+                            <div>clients apply to me again</div>
+                        </div>
+                        <div class="hero-cards-item d-flex">
+                            <div>12</div>
+                            <div>months warranty for the services provided</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <h2 class="about-me-title">
+                        why you should choose
+                        <span class="main-color">exactly me?</span>
+                    </h2>
+                    <p class="about-me-sub-title-text">
+                        Over 15 years of professional experience! More than 2000
+                        people have used my services! More than 70% of patients
+                        apply for recommendations
+                    </p>
+                    <div class="container-about-me d-flex">
+                        <div class="container-about-me-item d-flex">
+                            <div class="main-color">01</div>
+                            <div class="main-color">modern <br />equipment</div>
+                            <div>
+                                I use exclusively updated and most modern
+                                equipment - everything for the health of my
+                                patients
+                            </div>
+                        </div>
+                        <div class="container-about-me-item d-flex">
+                            <div class="main-color">02</div>
+                            <div class="main-color">
+                                interests of the<br />client first of all
+                            </div>
+                            <div>
+                                My task is to find a convenient time for you and
+                                build an individual treatment plan.
+                            </div>
+                        </div>
+                        <div class="container-about-me-item d-flex">
+                            <div class="main-color">03</div>
+                            <div class="main-color">
+                                professional<br />dentist
+                            </div>
+                            <div>
+                                I have a lot of experience and improve my skills
+                                every year.
+                            </div>
+                        </div>
+                        <div class="container-about-me-item d-flex">
+                            <div class="main-color">04</div>
+                            <div class="main-color">
+                                dental threatment<br />without pain
+                            </div>
+                            <div>
+                                I use high-quality anesthetics so that you do
+                                not feel pain at all
+                            </div>
+                        </div>
+                        <div class="container-about-me-item d-flex">
+                            <div class="main-color">05</div>
+                            <div class="main-color">
+                                comfortable and<br />cozy environment
+                            </div>
+                            <div>
+                                Created a very convenient and friendly
+                                environment to make you feel at home
+                            </div>
+                        </div>
+                        <div class="container-about-me-item d-flex">
+                            <div class="main-color">06</div>
+                            <div class="main-color">
+                                first consultation<br />free of charge
+                            </div>
+                            <div>
+                                You will receive a complete diagnosis, and we
+                                will develop a complete individual treatment
+                                plan
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container-appointment d-flex">
+                    <div class="appointment">
+                        <h2 class="appointment-title">make an appointment</h2>
+                        <p class="appointment-sub-title-text">
+                            Fill out the form and we will contact you to make an
+                            appointment
+                        </p>
+                        <form name="users-contact" action="#">
+                            <div class="form-wrapper d-flex">
+                                <div class="form-item d-flex">
+                                    <label for="name"
+                                        ><img
+                                            src="./images/user.png"
+                                            alt="user icon"
+                                    /></label>
+                                    <span>|</span>
+                                    <input
+                                        class="form-input"
+                                        type="text"
+                                        name="name"
+                                        id="name"
+                                        placeholder="Your name"
+                                        required />
+                                </div>
+                                <div class="form-item d-flex">
+                                    <label for="phone"
+                                        ><img
+                                            src="./images/phone-in-talk-icon.png"
+                                            alt="phone icon"
+                                    /></label>
+                                    <span>|</span>
+                                    <input
+                                        class="form-input"
+                                        type="tel"
+                                        name="phone"
+                                        id="phone"
+                                        placeholder="Phone number"
+                                        required />
+                                </div>
+                                <div>
+                                    <input
+                                        class="hero-btn form-btn"
+                                        type="submit"
+                                        value="sign up" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="extra-section container d-flex">
+                    <picture>
+                        <source
+                            srcset="./images/woman.webp"
+                            type="image/webp" />
+                        <source srcset="./images/woman.png" type="image/png" />
+                        <img
+                            src="./images/woman.jpeg"
+                            alt="a woman at a doctor's appointment" />
+                    </picture>
+                    <picture>
+                        <source srcset="./images/girl.webp" type="image/webp" />
+                        <source srcset="./images/girl.png" type="image/png" />
+                        <img
+                            src="./images/girl.jpeg"
+                            alt="a girl at a doctor's appointment" />
+                    </picture>
+                    <picture>
+                        <source srcset="./images/man.webp" type="image/webp" />
+                        <source srcset="./images/man.png" type="image/png" />
+                        <img
+                            src="./images/man.jpeg"
+                            alt="a man at a doctor's appointment" />
+                    </picture>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container d-flex">
+                <div class="footer-wrapper">
+                    <div class="footer-logo logo-wrap d-flex">
+                        <img
+                            src="./images/logo-tooth.svg"
+                            alt="logo tooth"
+                            class="logo" />
+                        <p>
+                            <span
+                                class="footer-logo-text to-uppercase big-logo-text"
+                                >dr.nikola tesla</span
+                            ><br /><span class="small-logo-text">dantist</span>
+                        </p>
+                    </div>
+                    <div class="footer-nav-sched-wrap d-flex">
+                        <div class="footer-nav-wrap">
+                            <ul class="footer-nav">
+                                <li class="footer-nav-item">Home</li>
+                                <li class="footer-nav-item">Services</li>
+                            </ul>
+                            <div class="lang-choice">
+                                <button class="to-uppercase choice-btn">
+                                    ua</button
+                                ><span>|</span>
+                                <button
+                                    class="active-btn to-uppercase choice-btn">
+                                    en
+                                </button>
+                            </div>
+                        </div>
+                        <div class="footer-sched-wrap">
+                            <span class="sched-title">Working hours:</span>
+                            <br /><span>Mon-Fri:<br />9:00-19:00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts-wrapper">
+                    <h3 class="contacts-title">Contacts</h3>
+                    <ul class="contacts-list">
+                        <li class="contacts-list-item">Nikola Tesla</li>
+                        <li class="contacts-list-item">
+                            <address>339 5th Ave, New York</address>
+                        </li>
+                        <li class="contacts-list-item">
+                            <a href="tel:+380999999999">+38 (066) 999-99-99</a>
+                        </li>
+                        <li class="contacts-list-item">
+                            <a
+                                href="viber://contact?number=%2380999999999"
+                                target="_blank"
+                                ><img
+                                    src="./images/viber-icon.png"
+                                    alt="viber link"
+                            /></a>
+                            <a href="https://t.me/+380999999999" target="_blank"
+                                ><img
+                                    src="./images/telegram-icon.png"
+                                    alt="telegram link"
+                            /></a>
+                            <a
+                                href="https://api.whatsapp.com/send?phone={{+380999999999}}"
+                                target="_blank"
+                                ><img
+                                    src="./images/whatsapp-icon.png"
+                                    alt="whatsapp link"
+                            /></a>
+                        </li>
+                        <li class="contacts-list-item">
+                            <a
+                                href="https://www.instagram.com/dr.NikTes/"
+                                target="_blank"
+                                >dr.NikTes</a
+                            >
+                        </li>
+                        <li class="contacts-list-item">
+                            <a href="mailto:dr.niktes@gmail.com"
+                                >dr.niktes@gmail.com</a
+                            >
+                        </li>
+                    </ul>
+                    <p class="rights-reserved">&copy; Copyright 2022</p>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
