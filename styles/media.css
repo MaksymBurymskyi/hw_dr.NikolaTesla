@@ -1,4 +1,5 @@
 /* ---- large ---- */
+
 html,
 body {
     overflow-x: hidden;
@@ -299,8 +300,47 @@ body {
     .hero-cards {
         display: none;
     }
-    section:nth-child(n + 2):nth-child(-n + 4) {
-        display: none;
+    .about-me-title {
+        margin-top: 54px;
+        font-size: 22px;
+    }
+    .container-about-me {
+        width: 318px;
+        height: 1030px;
+    }
+    .container-about-me-item {
+        width: 280px;
+        height: 160px;
+    }
+    .container-about-me-item div:nth-child(2) {
+        font-size: 16px;
+    }
+    .container-appointment {
+        width: 318px;
+        height: 350px;
+    }
+    .appointment {
+        width: 300px;
+        height: 337px;
+    }
+    .appointment-title {
+        font-size: 22px;
+    }
+    .appointment-sub-title-text {
+        font-size: 12px;
+    }
+    label {
+        height: 18px;
+    }
+    .form-item span {
+        font-size: 24px;
+        margin: 0 12px 0 10px;
+    }
+    .form-input {
+        font-size: 14px;
+    }
+    input::placeholder {
+        font-size: 14px;
     }
 
     /* footer styles */
