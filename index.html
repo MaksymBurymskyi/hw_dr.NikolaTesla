@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles/reset.css" />
         <link rel="stylesheet" href="./styles/style.css" />
         <link rel="stylesheet" href="./styles/media.css" />
         <link
@@ -30,15 +31,15 @@
                     <div class="navigation d-flex">
                         <nav>
                             <ul class="nav-list d-flex">
-                                <li>
+                                <li class="nav-list-item">
                                     <a class="nav-link" href="#main">Main</a>
                                 </li>
-                                <li>
+                                <li class="nav-list-item">
                                     <a class="nav-link" href="#services"
                                         >Services</a
                                     >
                                 </li>
-                                <li>
+                                <li class="nav-list-item">
                                     <a class="nav-link" href="#">Contacts</a>
                                 </li>
                             </ul>
@@ -46,6 +47,7 @@
                         <div class="nav-phone-link d-flex">
                             <a href="tel:+380999999999"
                                 ><img
+                                    class="nav-phone-icon"
                                     src="./images/phone-in-talk-icon.png"
                                     alt="phone icon" /></a
                             ><a
@@ -66,6 +68,7 @@
             </div>
         </header>
         <main>
+            <!-- /* ---- hero section ---- */ -->
             <section class="hero">
                 <div class="container">
                     <h1 class="hero-title">
@@ -100,6 +103,7 @@
                     </div>
                 </div>
             </section>
+            <!-- /* ---- section about me ---- */ -->
             <section>
                 <div class="container">
                     <h2 class="about-me-title">
@@ -175,6 +179,7 @@
                     </div>
                 </div>
             </section>
+            <!-- /* ---- section appointment ---- */ -->
             <section>
                 <div class="container-appointment d-flex">
                     <div class="appointment">
@@ -188,6 +193,7 @@
                                 <div class="form-item d-flex">
                                     <label for="name"
                                         ><img
+                                            class="label-img"
                                             src="./images/user.png"
                                             alt="user icon"
                                     /></label>
@@ -203,6 +209,7 @@
                                 <div class="form-item d-flex">
                                     <label for="phone"
                                         ><img
+                                            class="label-img"
                                             src="./images/phone-in-talk-icon.png"
                                             alt="phone icon"
                                     /></label>
@@ -226,6 +233,7 @@
                     </div>
                 </div>
             </section>
+            <!-- /* ---- extra-section ---- */ -->
             <section>
                 <div class="extra-section container d-flex">
                     <picture>
@@ -255,18 +263,21 @@
             </section>
         </main>
         <footer class="footer">
-            <div class="container d-flex">
+            <div class="footer-container container d-flex">
                 <div class="footer-wrapper">
                     <div class="footer-logo logo-wrap d-flex">
                         <img
                             src="./images/logo-tooth.svg"
                             alt="logo tooth"
                             class="logo" />
-                        <p>
+                        <p class="footer-logo-text">
                             <span
-                                class="footer-logo-text to-uppercase big-logo-text"
+                                class="footer-big-logo-text to-uppercase big-logo-text"
                                 >dr.nikola tesla</span
-                            ><br /><span class="small-logo-text">dantist</span>
+                            ><br /><span
+                                class="footer-small-logo-text small-logo-text"
+                                >dantist</span
+                            >
                         </p>
                     </div>
                     <div class="footer-nav-sched-wrap d-flex">
