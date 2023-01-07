@@ -35,6 +35,30 @@ body {
         width: 980px;
         height: 396px;
     }
+    .services__list-wraper {
+        width: 100%;
+    }
+    .services__list-wraper::after {
+        width: 210px;
+    }
+    .services__list-item:nth-child(1) .services__item-marker {
+        left: 397px;
+    }
+    .services__list-item:nth-child(2) .services__item-marker {
+        left: 367px;
+    }
+    .services__list-item:nth-child(3) .services__item-marker {
+        left: 399px;
+    }
+    .services__list-item:nth-child(4) .services__item-marker {
+        left: 549px;
+    }
+    .services__list-item:nth-child(5) .services__item-marker {
+        left: 579px;
+    }
+    .services__list-item:nth-child(6) .services__item-marker {
+        left: 547px;
+    }
     .extra-section {
         gap: 35px;
     }
@@ -86,6 +110,47 @@ body {
         width: 700px;
         height: 594px;
     }
+    .services__list-wraper::after {
+        width: 160px;
+    }
+    .services__list-item {
+        width: 360px;
+        height: 116px;
+    }
+    .services__list-item:nth-child(1) {
+        padding: 0 76px 0 0;
+    }
+    .services__list-item:nth-child(3) {
+        padding: 0 50px 0 0;
+    }
+    .services__list-item:nth-child(4) {
+        padding: 0 0 0 76px;
+    }
+    .services__list-item:nth-child(6) {
+        padding: 0 0 0 50px;
+    }
+    .services__list-item:nth-child(1) .services__item-marker {
+        left: 319px;
+        top: 10px;
+    }
+    .services__list-item:nth-child(2) .services__item-marker {
+        left: 280px;
+    }
+    .services__list-item:nth-child(3) .services__item-marker {
+        left: 320px;
+        top: 268px;
+    }
+    .services__list-item:nth-child(4) .services__item-marker {
+        left: 403px;
+        top: 10px;
+    }
+    .services__list-item:nth-child(5) .services__item-marker {
+        left: 442px;
+    }
+    .services__list-item:nth-child(6) .services__item-marker {
+        left: 404px;
+        top: 268px;
+    }
     .container-appointment {
         width: 700px;
         height: 400px;
@@ -126,7 +191,7 @@ body {
         height: 40px;
     }
     .big-logo-text {
-        font-size: 17px;
+        font-size: 16px;
         line-height: 23px;
     }
     .small-logo-text {
@@ -199,6 +264,74 @@ body {
     .container-about-me {
         width: 376px;
         height: 1140px;
+    }
+    .services__list-wraper {
+        background: none;
+    }
+    .services__list-wraper::after {
+        content: "";
+        width: 470px;
+        height: 575px;
+        background: url(../images/big-tooth.png) no-repeat 50% 50% / 540px 490px;
+        z-index: -1;
+        filter: blur(5px);
+    }
+    .serives__list {
+        gap: 20px;
+        height: 580px;
+        padding-top: 35px;
+    }
+    .services__list-item {
+        width: 225px;
+        height: 155px;
+    }
+    .services__list-item:nth-child(1) {
+        padding: 1px;
+    }
+    .services__list-item:nth-child(2) {
+        padding: 1px;
+    }
+    .services__list-item:nth-child(3) {
+        padding: 1px;
+    }
+    .services__list-item:nth-child(4) {
+        padding: 1px;
+    }
+    .services__list-item:nth-child(5) {
+        padding: 1px;
+    }
+    .services__list-item:nth-child(6) {
+        padding: 1px;
+    }
+    .services__list-item:nth-child(1) .services__item-marker {
+        left: 117px;
+        top: 10px;
+    }
+    .services__list-item:nth-child(2) .services__item-marker {
+        left: 2px;
+        top: 182px;
+    }
+    .services__list-item:nth-child(3) .services__item-marker {
+        left: 2px;
+        top: 357px;
+    }
+    .services__list-item:nth-child(4) .services__item-marker {
+        left: 330px;
+        top: 10px;
+    }
+    .services__list-item:nth-child(5) .services__item-marker {
+        left: 445px;
+        top: 182px;
+    }
+    .services__list-item:nth-child(6) .services__item-marker {
+        left: 445px;
+        top: 357px;
+    }
+    .services__warning {
+        padding: 0 20px 0 140px;
+    }
+    .services__warning::before {
+        left: 20px;
     }
     .container-appointment {
         width: 460px;
@@ -314,6 +447,52 @@ body {
     }
     .container-about-me-item div:nth-child(2) {
         font-size: 16px;
+    }
+    .services__list-wraper::after {
+        content: "";
+        width: 2px;
+        height: 100%;
+        background: none;
+        filter: blur(1px);
+        top: 0px;
+        left: 200px;
+    }
+    .serives__list {
+        height: unset;
+        padding-top: 0;
+    }
+    .services__list-item:nth-child(n + 3) {
+        text-align: right;
+    }
+    .services__list-item {
+        height: unset;
+    }
+    .services__list-item:nth-child(1) .services__item-marker {
+        left: 275px;
+        top: 30px;
+    }
+    .services__list-item:nth-child(2) .services__item-marker {
+        left: 275px;
+        top: 195px;
+    }
+    .services__list-item:nth-child(3) .services__item-marker {
+        left: 275px;
+        top: 370px;
+    }
+    .services__list-item:nth-child(4) .services__item-marker {
+        left: 275px;
+        top: 525px;
+    }
+    .services__list-item:nth-child(5) .services__item-marker {
+        left: 275px;
+        top: 665px;
+    }
+    .services__list-item:nth-child(6) .services__item-marker {
+        left: 275px;
+        top: 800px;
+    }
+    .services__warning {
+        height: 80px;
     }
     .container-appointment {
         width: 318px;
