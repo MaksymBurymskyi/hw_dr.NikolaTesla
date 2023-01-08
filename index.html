@@ -14,56 +14,56 @@
         <title>Dr. Nikola Tesla Dantist</title>
     </head>
     <body>
+        <!-- /* ---- header ---- */ -->
         <header class="header">
-            <div class="container d-flex wrapper-header">
-                <div class="wrapper-nav d-flex">
-                    <div class="logo-wrap main-color d-flex">
+            <div class="header__wrapper container d-flex">
+                <div class="header__wrapper-nav d-flex">
+                    <div class="logo__block main-color d-flex">
                         <img
                             src="./images/blue-tooth.png"
                             alt="logo tooth"
                             class="logo" />
                         <p>
-                            <span class="to-uppercase big-logo-text"
+                            <span class="to-uppercase logo__text--big"
                                 >dr.nikola tesla</span
-                            ><br /><span class="small-logo-text">dantist</span>
+                            ><br /><span class="logo__text--small"
+                                >dantist</span
+                            >
                         </p>
                     </div>
                     <div class="navigation d-flex">
                         <nav>
-                            <ul class="nav-list d-flex">
-                                <li class="nav-list-item">
-                                    <a class="nav-link" href="#main">Main</a>
+                            <ul class="nav__list d-flex">
+                                <li class="nav__list-item">
+                                    <a class="nav__link" href="#main">Main</a>
                                 </li>
-                                <li class="nav-list-item">
-                                    <a class="nav-link" href="#services"
+                                <li class="nav__list-item">
+                                    <a class="nav__link" href="#services"
                                         >Services</a
                                     >
                                 </li>
-                                <li class="nav-list-item">
-                                    <a class="nav-link" href="#contacts"
+                                <li class="nav__list-item">
+                                    <a class="nav__link" href="#contacts"
                                         >Contacts</a
                                     >
                                 </li>
                             </ul>
                         </nav>
-                        <div class="nav-phone-link d-flex">
-                            <a href="tel:+380999999999"
-                                ><img
-                                    class="nav-phone-icon"
-                                    src="./images/phone-in-talk-icon.png"
-                                    alt="phone icon" /></a
-                            ><a
-                                class="nav-link phone-link"
+                        <div class="nav__phone-link d-flex">
+                            <a
+                                class="nav__link phone-link"
                                 href="tel:+380999999999"
                                 >+38 (099) 999-99-99</a
                             >
                         </div>
                     </div>
                 </div>
-                <div class="lang-choice">
-                    <button class="to-uppercase choice-btn">ua</button
-                    ><span>|</span>
-                    <button class="active-btn to-uppercase choice-btn">
+                <div class="choice__lang">
+                    <button
+                        class="choice__lang--element choice__btn to-uppercase">
+                        ua
+                    </button>
+                    <button class="choice__btn active-btn to-uppercase">
                         en
                     </button>
                 </div>
@@ -356,20 +356,21 @@
                 </div>
             </section>
         </main>
+        <!-- /* ---- footer ---- */ -->
         <footer class="footer">
             <div class="footer-container container d-flex">
                 <div class="footer-wrapper">
-                    <div class="footer-logo logo-wrap d-flex">
+                    <div class="footer-logo logo__block d-flex">
                         <img
                             src="./images/logo-tooth.svg"
                             alt="logo tooth"
                             class="logo" />
                         <p class="footer-logo-text">
                             <span
-                                class="footer-big-logo-text to-uppercase big-logo-text"
+                                class="footer-big-logo-text to-uppercase logo__text--big"
                                 >dr.nikola tesla</span
                             ><br /><span
-                                class="footer-small-logo-text small-logo-text"
+                                class="footer-small-logo-text logo__text--small"
                                 >dantist</span
                             >
                         </p>
@@ -377,15 +378,20 @@
                     <div class="footer-nav-sched-wrap d-flex">
                         <div class="footer-nav-wrap">
                             <ul class="footer-nav">
-                                <li class="footer-nav-item">Home</li>
-                                <li class="footer-nav-item">Services</li>
+                                <li class="footer-nav-item">
+                                    <a href="#main">Home</a>
+                                </li>
+                                <li class="footer-nav-item">
+                                    <a href="#services">Services</a>
+                                </li>
                             </ul>
-                            <div class="lang-choice">
-                                <button class="to-uppercase choice-btn">
-                                    ua</button
-                                ><span>|</span>
+                            <div class="choice__lang">
                                 <button
-                                    class="active-btn to-uppercase choice-btn">
+                                    class="choice__lang--element choice__btn to-uppercase">
+                                    ua
+                                </button>
+                                <button
+                                    class="choice__btn active-btn to-uppercase">
                                     en
                                 </button>
                             </div>
