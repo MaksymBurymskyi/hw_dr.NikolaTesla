@@ -65,6 +65,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 body {
     font-family: "Roboto", "Sofia Sans", "Montserrat", sans-serif;
@@ -100,14 +101,14 @@ body {
     left: 0;
     right: 0;
 }
-.wrapper-header {
+.header__wrapper {
     justify-content: space-between;
 }
-.wrapper-nav,
+.header__wrapper-nav,
 .navigation {
     gap: 90px;
 }
-.logo-wrap {
+.logo__block {
     gap: 7px;
     height: 91px;
     font-family: "Sofia Sans";
@@ -115,37 +116,50 @@ body {
 .logo {
     height: 81px;
 }
-.big-logo-text {
+.logo__text--big {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 38px;
     line-height: 53px;
 }
-.small-logo-text {
+.logo__text--small {
     font-size: 26px;
 }
-.nav-list {
+.nav__list {
     padding-top: 16px;
     width: 350px;
     justify-content: space-between;
 }
-.nav-link {
+.nav__list-item:hover a {
+    color: var(--main-color);
+}
+.nav__link {
     text-decoration: none;
     color: var(--main-text-color);
 }
-.nav-phone-link {
+.nav__phone-link {
     padding-top: 16px;
 }
 .phone-link {
-    padding-top: 2px;
+    padding: 2px 0 0 30px;
+    position: relative;
 }
-.lang-choice {
+.phone-link::before {
+    content: url("../images/phone-in-talk-icon.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 28px;
+    height: 28px;
+}
+.choice__lang {
     padding-top: 14px;
 }
-.lang-choice span {
+.choice__lang--element::after {
+    content: "|";
     padding: 0 5px;
     font-size: 22px;
 }
-.choice-btn {
+.choice__btn {
     font-family: inherit;
     background: none;
     border: unset;
@@ -480,6 +494,9 @@ label {
     background: none;
     outline-style: none;
 }
+.form-item:has(.form-input:focus) {
+    border: 2px solid var(--main-color);
+}
 input::placeholder {
     font-weight: 600;
     font-size: 19px;
@@ -517,6 +534,9 @@ input:-webkit-autofill:active {
     background: linear-gradient(91.75deg, #a1c7d4 18.06%, #0680aa 98.16%);
     padding-top: 60px;
 }
+.footer-wrapper {
+    color: var(--footer-text-color);
+}
 .footer-logo {
     margin: 0 30px 30px 0;
 }
@@ -526,8 +546,17 @@ input:-webkit-autofill:active {
 .footer-nav-sched-wrap {
     font-size: 20px;
 }
+.footer-nav-item:hover a {
+    color: var(--white-color);
+}
 .footer-nav-item:last-child {
     margin: 20px 0 13px;
+}
+.footer-nav-sched-wrap button:hover {
+    color: var(--white-color);
+}
+.footer-nav-sched-wrap .choice__lang--element::after {
+    color: var(--footer-text-color);
 }
 .footer-sched-wrap {
     margin: 37px 0 0 160px;
@@ -570,6 +599,16 @@ input:-webkit-autofill:active {
 .contacts-list-item:nth-child(3),
 .contacts-list-item:nth-last-child(-n + 2) {
     padding-left: 45px;
+}
+:where(
+        .contacts-list-item:nth-child(3),
+        .contacts-list-item:nth-child(5),
+        .contacts-list-item:nth-child(6)
+    )
+    a:hover,
+a::after {
+    content: "";
+    border-bottom: 1px solid var(--white-color);
 }
 .contacts-list-item:nth-child(3)::before {
     content: "";

@@ -15,11 +15,11 @@ body {
     .header {
         top: 40px;
     }
-    .wrapper-nav,
+    .header__wrapper-nav,
     .navigation {
         gap: 50px;
     }
-    .nav-list {
+    .nav__list {
         width: 230px;
     }
 
@@ -79,15 +79,15 @@ body {
 
     /* header styles */
 
-    .big-logo-text {
+    .logo__text--big {
         font-size: 32px;
     }
-    .nav-list {
+    .nav__list {
         width: unset;
         flex-direction: column;
         padding-top: 0;
     }
-    .nav-list-item {
+    .nav__list-item {
         padding-bottom: 15px;
     }
 
@@ -187,24 +187,24 @@ body {
     .header {
         top: 30px;
     }
-    .logo-wrap {
+    .logo__block {
         height: 40px;
     }
-    .big-logo-text {
+    .logo__text--big {
         font-size: 16px;
         line-height: 23px;
     }
-    .small-logo-text {
+    .logo__text--small {
         font-size: 12px;
     }
-    .wrapper-nav,
+    .header__wrapper-nav,
     .navigation {
         gap: 20px;
     }
-    .nav-list {
+    .nav__list {
         display: none;
     }
-    .nav-phone-link {
+    .nav__phone-link {
         padding-top: 0;
     }
     .nav-phone-icon {
@@ -213,13 +213,13 @@ body {
     .phone-link {
         font-size: 12px;
     }
-    .lang-choice {
+    .choice__lang {
         padding-top: 0;
     }
-    .lang-choice span {
+    .choice__lang span {
         font-size: 16px;
     }
-    .choice-btn {
+    .choice__btn {
         font-size: 16px;
     }
 
@@ -389,18 +389,18 @@ body {
 
     /* header styles */
 
-    .wrapper-nav {
+    .header__wrapper-nav {
         width: 313px;
         justify-content: space-between;
     }
     .navigation,
-    .wrapper-nav {
+    .header__wrapper-nav {
         gap: 2px;
     }
-    .logo-wrap {
+    .logo__block {
         gap: 2px;
     }
-    .lang-choice {
+    .choice__lang {
         display: none;
     }
 
