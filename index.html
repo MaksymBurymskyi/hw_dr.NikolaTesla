@@ -14,56 +14,58 @@
         <title>Dr. Nikola Tesla Dantist</title>
     </head>
     <body>
+        <!-- /* ---- header ---- */ -->
         <header class="header">
-            <div class="container d-flex wrapper-header">
-                <div class="wrapper-nav d-flex">
-                    <div class="logo-wrap main-color d-flex">
+            <div class="header__wrapper container d-flex">
+                <div class="burger" tabindex="0"><span></span></div>
+                <div class="header__wrapper-nav d-flex">
+                    <div class="logo__block main-color d-flex">
                         <img
                             src="./images/blue-tooth.png"
                             alt="logo tooth"
                             class="logo" />
                         <p>
-                            <span class="to-uppercase big-logo-text"
+                            <span class="to-uppercase logo__text--big"
                                 >dr.nikola tesla</span
-                            ><br /><span class="small-logo-text">dantist</span>
+                            ><br /><span class="logo__text--small"
+                                >dantist</span
+                            >
                         </p>
                     </div>
                     <div class="navigation d-flex">
                         <nav>
-                            <ul class="nav-list d-flex">
-                                <li class="nav-list-item">
-                                    <a class="nav-link" href="#main">Main</a>
+                            <ul class="nav__list d-flex">
+                                <li class="nav__list-item">
+                                    <a class="nav__link" href="#main">Main</a>
                                 </li>
-                                <li class="nav-list-item">
-                                    <a class="nav-link" href="#services"
+                                <li class="nav__list-item">
+                                    <a class="nav__link" href="#services"
                                         >Services</a
                                     >
                                 </li>
-                                <li class="nav-list-item">
-                                    <a class="nav-link" href="#contacts"
+                                <li class="nav__list-item">
+                                    <a class="nav__link" href="#contacts"
                                         >Contacts</a
                                     >
                                 </li>
                             </ul>
                         </nav>
-                        <div class="nav-phone-link d-flex">
-                            <a href="tel:+380999999999"
-                                ><img
-                                    class="nav-phone-icon"
-                                    src="./images/phone-in-talk-icon.png"
-                                    alt="phone icon" /></a
-                            ><a
-                                class="nav-link phone-link"
+                        <div class="nav__phone d-flex">
+                            <a
+                                class="nav__link nav__phone-link"
                                 href="tel:+380999999999"
                                 >+38 (099) 999-99-99</a
                             >
                         </div>
                     </div>
                 </div>
-                <div class="lang-choice">
-                    <button class="to-uppercase choice-btn">ua</button
-                    ><span>|</span>
-                    <button class="active-btn to-uppercase choice-btn">
+                <div class="choice__lang choice__lang-block">
+                    <button
+                        class="choice__lang--element choice__btn to-uppercase">
+                        ua
+                    </button>
+                    <button
+                        class="choice__btn choice__btn--active to-uppercase">
                         en
                     </button>
                 </div>
@@ -73,32 +75,32 @@
             <!-- /* ---- hero section ---- */ -->
             <section class="hero" id="main">
                 <div class="container">
-                    <h1 class="hero-title">
+                    <h1 class="hero__title">
                         professional<br />and painless<br />
                         <span class="main-color">dental treatment</span>
                     </h1>
-                    <p class="hero-text">
+                    <p class="hero__text">
                         I will conduct a complete diagnosis of the oral cavity
                         and build an individual treatment plan. Call and get a
                         completely free consultation
                     </p>
-                    <div class="hero-btn-wrapper d-flex">
-                        <a class="hero-btn" href="tel:+380999999999">Call</a>
-                        <a class="hero-btn" href="#services">Services</a>
+                    <div class="hero__btn-wrapper d-flex">
+                        <a class="hero__btn" href="tel:+380999999999">Call</a>
+                        <a class="hero__btn" href="#services">Services</a>
                     </div>
-                    <div class="hero-cards d-flex">
-                        <div class="hero-cards-item d-flex">
+                    <div class="hero__cards d-flex">
+                        <div class="hero__cards-item d-flex">
                             <div>15</div>
                             <div>
                                 years providing services for dental treatment
                                 for adults and children
                             </div>
                         </div>
-                        <div class="hero-cards-item d-flex">
+                        <div class="hero__cards-item d-flex">
                             <div>90%</div>
                             <div>clients apply to me again</div>
                         </div>
-                        <div class="hero-cards-item d-flex">
+                        <div class="hero__cards-item d-flex">
                             <div>12</div>
                             <div>months warranty for the services provided</div>
                         </div>
@@ -190,12 +192,18 @@
                         do i provide?
                     </h2>
                     <div class="services__list-wraper">
+                        <div class="services__item-marker"></div>
+                        <div class="services__item-marker"></div>
+                        <div class="services__item-marker"></div>
+                        <div class="services__item-marker"></div>
+                        <div class="services__item-marker"></div>
+                        <div class="services__item-marker"></div>
                         <ul class="serives__list d-flex">
                             <li class="services__list-item">
                                 <h3 class="services__item-title main-color">
                                     therapeutic help
                                 </h3>
-                                <div class="services__item-marker"></div>
+
                                 <p class="services__item-descr">
                                     Treatment of caries, pulpitis,
                                     periodontitis, aesthetic restoration of
@@ -204,11 +212,12 @@
                                     qualitatively
                                 </p>
                             </li>
+                            <!-- <div class="services__item-marker"></div> -->
                             <li class="services__list-item">
                                 <h3 class="services__item-title main-color">
                                     surgical care
                                 </h3>
-                                <div class="services__item-marker"></div>
+
                                 <p class="services__item-descr">
                                     Painless and atraumatic removal of teeth. We
                                     will give you the necessary recommendations
@@ -216,11 +225,12 @@
                                     features
                                 </p>
                             </li>
+                            <!-- <div class="services__item-marker"></div> -->
                             <li class="services__list-item">
                                 <h3 class="services__item-title main-color">
                                     professional tooth cleaning
                                 </h3>
-                                <div class="services__item-marker"></div>
+
                                 <p class="services__item-descr">
                                     With the help of ultrasound and Air Flow
                                     technologies, I will flawlessly clean my
@@ -228,11 +238,12 @@
                                     damaging the enamel
                                 </p>
                             </li>
+                            <!-- <div class="services__item-marker"></div> -->
                             <li class="services__list-item">
                                 <h3 class="services__item-title main-color">
                                     prosthetics
                                 </h3>
-                                <div class="services__item-marker"></div>
+
                                 <p class="services__item-descr">
                                     I cooperate with one of the best dental
                                     laboratories, so I guarantee that the
@@ -240,22 +251,24 @@
                                     comfortable.
                                 </p>
                             </li>
+                            <!-- <div class="services__item-marker"></div> -->
                             <li class="services__list-item">
                                 <h3 class="services__item-title main-color">
                                     children's reception
                                 </h3>
-                                <div class="services__item-marker"></div>
+
                                 <p class="services__item-descr">
                                     No stress, no pain. Reception is based on
                                     understanding the desires, needs,
                                     experiences of a small patient
                                 </p>
                             </li>
+                            <!-- <div class="services__item-marker"></div> -->
                             <li class="services__list-item">
                                 <h3 class="services__item-title main-color">
                                     plasmotherapy
                                 </h3>
-                                <div class="services__item-marker"></div>
+
                                 <p class="services__item-descr">
                                     Treatment of periodontal diseases. Allows
                                     you to restore the metabolic process,
@@ -263,6 +276,7 @@
                                     tissue cells
                                 </p>
                             </li>
+                            <!-- <div class="services__item-marker"></div> -->
                         </ul>
                     </div>
                     <div class="services__warning">
@@ -318,7 +332,7 @@
                                 </div>
                                 <div>
                                     <input
-                                        class="hero-btn form-btn"
+                                        class="hero__btn form-btn"
                                         type="submit"
                                         value="sign up" />
                                 </div>
@@ -356,20 +370,21 @@
                 </div>
             </section>
         </main>
+        <!-- /* ---- footer ---- */ -->
         <footer class="footer">
             <div class="footer-container container d-flex">
                 <div class="footer-wrapper">
-                    <div class="footer-logo logo-wrap d-flex">
+                    <div class="footer-logo logo__block d-flex">
                         <img
                             src="./images/logo-tooth.svg"
                             alt="logo tooth"
                             class="logo" />
                         <p class="footer-logo-text">
                             <span
-                                class="footer-big-logo-text to-uppercase big-logo-text"
+                                class="footer-big-logo-text to-uppercase logo__text--big"
                                 >dr.nikola tesla</span
                             ><br /><span
-                                class="footer-small-logo-text small-logo-text"
+                                class="footer-small-logo-text logo__text--small"
                                 >dantist</span
                             >
                         </p>
@@ -377,15 +392,20 @@
                     <div class="footer-nav-sched-wrap d-flex">
                         <div class="footer-nav-wrap">
                             <ul class="footer-nav">
-                                <li class="footer-nav-item">Home</li>
-                                <li class="footer-nav-item">Services</li>
+                                <li class="footer-nav-item">
+                                    <a href="#main">Home</a>
+                                </li>
+                                <li class="footer-nav-item">
+                                    <a href="#services">Services</a>
+                                </li>
                             </ul>
-                            <div class="lang-choice">
-                                <button class="to-uppercase choice-btn">
-                                    ua</button
-                                ><span>|</span>
+                            <div class="choice__lang">
                                 <button
-                                    class="active-btn to-uppercase choice-btn">
+                                    class="choice__lang--element choice__btn to-uppercase">
+                                    ua
+                                </button>
+                                <button
+                                    class="choice__btn choice__btn--active to-uppercase">
                                     en
                                 </button>
                             </div>
